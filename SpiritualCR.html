@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+<meta charset ="UTF-8">
+<!-- adding a viewport tag to ensure a responsive visible web page -->
+<meta name ="viewport" content="width=device-width, initial-scale=1">
+<!-- linking jQuery library -->
+<script src="javascript/jquery-3.5.1.min.js"></script>
+
+<!-- Spiritual Section -->
+
+<title>Spiritual | Coptic Resource</title>
+<script src="https://kit.fontawesome.com/ed1c759de6.js" crossorigin="anonymous"></script>
+<link id = "styling_sheet" rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<!-- Header created as well as navigation bar to help direct users from one page to another -->
+<!-- Button added that will control light/dark mode depending on user's/persona's preference  -->
+<!-- Button added that will execute search based on user's input/selection -->
+
+<div id= "header">
+	<div id= "title_header">
+
+		<button onclick ='change_style()' class="light_dark"><i class="fas fa-lightbulb"></i></button>
+		<button onclick = 'Search.execute()' class ="search" ><i class="fas fa-search"></i></button>
+<!--input textbox-->
+		<input type="search" id="searchValue" list="contentList" >
+		<datalist id="contentList">
+		<option value="Audio/Video Hymns" >
+		<option value="Basic Breakdown of Early Church History" >
+		<option value="Character: Chronic Complaining, Negative Attitudes Directly Affect Spiritual Growth">
+		<option value="Communion" >
+		<option value="Contemplations on The Resurrection" >
+		<option value="Coptic Curriculum" >
+		<option value="Coptic Dates" >
+		<option value="Coptic Hymns in English" >
+		<option value="Early History of the Coptic Church" >
+		<option value="Ecumenical Councils" >
+		<option value="History Basics of the Coptic Church" >
+		<option value="History of Coptic Hymns" >
+		<option value="History of Specific Traditions, Beliefs and Practices in the Coptic Church" >
+		<option value="Hymns Curriculum" >
+		<option value="Hymns/Coptic Quizzes" >
+		<option value="Introduction to the Coptic Orthodox Church" >
+		<option value="Life of Faith" >
+		<option value="Liturgy Time Table" >
+		<option value="Lyrics for Coptic Hymns" >
+		<option value="Matthew Chapter 6" >
+		<option value="Matthew Chapter 7" >
+		<option value="Matthew Chapter 9" >
+		<option value="Quizzes on The Holy Bible" >
+		<option value="Rites for Deacons" >
+		<option value="Rites for Feasts of the Church" >
+		<option value="Rites for Sacraments" >
+		<option value="Spiritual Growth" >
+		<option value="Spiritual Talks" >
+		<option value="Spirituality of the Coptic Horologion" >
+		<option value="Talks and Sermons" >
+		<option value="The Beholder of God Mark the Evangelist Saint and Martyr" >
+		<option value="The Nature of Christ" >
+		<option value="The Seven Words of Our Lord on The Cross" >
+		<option value="The Spirituality of the Rites of the Holy Liturgy in the Coptic Orthodox Church" >
+		<option value="The Priesthood" >
+		<option value="Understanding the Liturgy" >
+		</datalist>
+		
+		<div id="page_title">
+			<h1>Spiritual</h1>
+		</div>
+
+<!-- Navigation bar connecting different pages with class button for the design of the button -->
+
+		<div id= "navigate">
+			<a href="index.html" class= "button">Home</a>
+			<a href="HymnsCR.html" class= "button">Hymns</a>
+			<a href="HistoryCR.html" class= "button">History</a>
+			<a href="RitesCR.html" class= "button">Rites</a>
+			<a href="ContactUsCR.html" class= "button">Contact Us</a>
+		</div>
+	</div>
+
+<!-- Verse that will be on top of the page -->
+
+	<div id="verse">
+		<p>"Casting all your care upon Him, for He cares for you"
+		<span>1 Peter 5:7</span></p>
+	</div>
+
+<!-- Picture that will be used in the page with a certain class so it can be used on laptops/tablets -->
+
+	<div id="picture">
+		<img src="spiritualsection.jpg" alt="Big brown cross with a sunset in the back" class="responsive_image" width="400" height="600">
+	</div>
+</div>
+
+<!-- Beginning of the content section and header for annnouncements is created -->
+
+<div id="content">
+
+<!-- Where the YouTube IFrame gets displayed-->
+	<div id="player_header">
+		<h1>Talks and Sermons</h1>
+		<div id="player"></div>
+	</div>
+
+	<div id= "litury_time">
+		<div id= "liturgy_time_header">
+			<h1>Liturgy Time Table</h1>
+		</div>
+
+<!-- Table created from W3 about liturgy times-->
+
+			<table id= "liturgy_table">
+			  <tr>
+			    <th>Day of the Week</th> 
+			    <th>Time</th>
+			  </tr>
+			  <tr>
+			    <td>Monday</td>
+			    <td>7:00 - 10:00 am</td>
+			  </tr>
+			  <tr>
+			    <td>Tuesday</td>
+			    <td>7:00 - 10:00 am</td>
+			  </tr>
+			  <tr>
+			    <td>Wednesday</td>
+			    <td>7:00 - 10:00 am</td>
+			  </tr>
+			  <tr>
+			    <td>Thursday</td>
+			    <td>5:00 - 7:30 am</td>
+			  </tr>
+			  <tr>
+			    <td>Friday</td>
+			    <td>7:00 - 10:00 am</td>
+			  </tr>
+			  <tr>
+			    <td>Saturday</td>
+			    <td>8:00 - 10:00 am</td>
+			  </tr>
+			  <tr>
+			    <td>Sunday</td>
+			    <td>6:00 - 9:00 am</td>
+			  </tr>
+			</table>
+	</div>
+
+<!-- Creating a lessons section and header -->
+<!-- referencing PDFs that will be uploaded to the site (citations are attached in an external sheet) -->
+<!-- creating a button of class accordion_dropdown as well as a class classed accordion_information in order to be used for the accordion design -->
+
+	<div id= "lessons">
+		<div id= "lessons_header">
+			<h1>Lessons</h1>
+		</div>
+			<button class= "accordion_dropdown"> Biblical </button>
+		<div class= "accordion_information">
+			<p>
+				<a href="content/Matthew6.pdf"><span class = "pdf"> Matthew Chapter 6 </span></a>
+			</p>
+			<p>
+				<a href="content/Matthew7.pdf"><span class = "pdf"> Matthew Chapter 7 </span></a>
+			</p>
+			<p>
+				<a href="content/Matthew9.pdf"><span class = "pdf"> Matthew Chapter 9 </span></a>
+			</p>
+		</div>
+	</div>
+
+
+<!-- Creating a books section and header -->
+
+	<div id= "books">
+		<div id= "books_header">
+			<h1>Books</h1>
+		</div>
+		<button class= "accordion_dropdown"> HG Bishop Youssef</button>
+		<div class= "accordion_information">
+			<p>
+				<a href="content/CharacterChronicComplainingNegativeAttitudesDirectlyAffectSpiritualGrowth.pdf"><span class = "pdf">Character: Chronic Complaining, Negative Attitudes Directly Affect Spiritual Growth</span></a>
+			</p>
+	</div>
+
+	<button class= "accordion_dropdown"> Pope Shenouda III</button>
+	<div class= "accordion_information">
+		<p>
+			<a href="content/ContemplationsOnTheResurrection.pdf"><span class = "pdf">Contemplations on The Resurrection</span></a>
+		</p>
+		<p>
+			<a href="content/LifeOfFaith.pdf"><span class = "pdf">Life of Faith</span></a>
+		</p>
+		<p>
+			<a href="content/QuizzesOnTheHolyBible.pdf"><span class = "pdf" >Quizzes on The Holy Bible</span></a>
+		</p>
+		<p>
+			<a href="content/TheSevenWordsOfOurLordOnTheCross.pdf"><span class = "pdf">The Seven Words of Our Lord on The Cross</span></a>
+		</p>
+	</div>
+	</div>
+
+<!-- link the javascript code used for the accordion design -->
+	<script src="javascript/accordion.js"> </script>
+	
+<!-- Creating a helpful links section and header -->
+
+	<div id="helpful_links">
+		<div id="helpful_links_header">
+			<h1>Helpful Links</h1>
+		</div>
+
+<!-- referencing links that will be uploaded to the site and describing what they are for -->
+
+			<ul>
+				<li>
+				 	<a href="http://orthodoxsermons.org/sermons" class = "button2">+Listen to Spiritual Talks by Different Speakers+</a>
+				</li>
+				<li>
+				 	<a href="https://suscopts.org/resources/literature/spirituality/spiritual-growth/" class = "button2">+Learn about Spiritual Growth+</a>
+				</li>
+
+				<li>
+				 	<a href="http://becomeorthodox.org/prayer/the-spirituality-of-the-coptic-horologion-agpeya/" class = "button2">+Learn about the Spirituality of the Coptic Horologion+</a>
+				</li>
+			</ul> 
+	</div>
+
+</div>
+
+
+<!-- Placing a footer at the bottom of the page-->
+
+<div id= "footer">
+	<p> Author: George Ghobrial ||	Date Last Modified: Jan 08, 2021  </p>
+</div>
+
+
+<!-- linking reference to the top of the webpage -->
+
+<a href="#header" class= "to_top hidden_top"><i class="fas fa-arrow-alt-circle-up"></i></a>
+
+<!-- Script added for light/dark mode, search bar, to top function, and IFrame YouTube script-->
+
+<script src="javascript/darkmode.js"> </script>
+<script src="javascript/searchbar.js"> </script>
+<script src="javascript/totop.js"> </script>
+<script src="javascript/youtubeIFrame.js"> </script>
+
+</body>
+</html>

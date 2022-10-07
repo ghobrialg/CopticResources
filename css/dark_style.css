@@ -1,0 +1,503 @@
+/*Citations and References uploaded with code on server*/
+
+/*  The W3C CSS Validation Service. (n.d.). CSS Validation Services. Retrieved August 19, 2020, from https://jigsaw.w3.org/css-validator/
+was used for CSS validation */
+
+body{
+	background-color: #0B0A0A;
+	color: white;
+}
+
+/*General*/
+
+img{
+	max-width: 100%; /*img max-width used to ensure slide show fits in webpage*/
+}
+
+#header{
+	text-align: left;
+	padding: 20px;
+	min-height: 100px;
+}
+
+#title_header{
+	background-color: bisque;
+	color: maroon;
+	font-size: 30px;
+	padding: 1px;
+}
+
+#navigate{
+	background-color: bisque;
+	color: sienna;
+	font-size: 30px;
+	min-height: 40px;
+	text-align: right;
+}
+
+/*search bar/button*/
+
+input[type=search], select {
+  width: 20%;
+  height: 35px;
+  padding: 5px;
+  float: right;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.search{
+	border-radius: 0;
+	text-decoration: none;
+	float: right;
+	cursor: pointer;
+}
+
+/*light-dark*/
+
+.fas{
+	color: gold;
+	font-size: 30px;
+}
+
+.light_dark{
+	border-radius: 0;
+	float: right;
+	background-color: whitesmoke;
+	text-decoration: none;
+	cursor: pointer;
+
+
+}
+
+.light_dark:hover{
+	background-color: white;
+}
+
+
+/*footer*/
+
+#footer{
+	padding: 10px;
+	position: relative;
+	height:50px;
+	margin-top: -50px;
+	text-align: center;
+	clear: both;
+	margin-top: 3%;
+}
+
+/*button designs from W3 and other sources written in reference sheet*/
+
+.button{
+	padding: 4px 8px;
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 2px;
+	background-color: maroon;
+	color: white;
+
+}
+
+.button:hover{
+	background-color: firebrick;
+}
+
+.button2{
+	padding: 2px 4px;
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 2px;
+	background-color: firebrick;
+	color: white;
+}
+
+.button2:hover{
+	background-color: firebrick;
+}
+
+/*accordion*/
+
+button.accordion_dropdown{
+	font-family: "Times New Roman", Times, serif;
+	padding: 12px;
+	border-radius: 0px;
+	border: none;
+	cursor: pointer;
+	font-size: 27px;
+	text-align: left;
+	width: 100%;
+	background-color: gainsboro;
+}
+
+button.accordion_dropdown:hover{
+	background-color: silver;
+}
+
+
+/*chevron css code cited in reference & citations*/
+
+button.accordion_dropdown::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    width: 12px;
+    height: 12px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(45deg);
+    right: 10px;
+    top: 8px;
+    float: right;
+}
+button.accordion_dropdown.active::before {
+   	content: "";
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    width: 12px;
+    height: 12px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(225deg);
+    right: 10px;
+    top: 14px;
+    float: right;
+}
+
+.accordion_information{
+	background-color: #f2f2f2;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.4s;
+	padding-left: 10px;
+}
+
+
+/*spans-lists*/
+
+a:link{
+	text-decoration: none;
+}
+
+span{
+	font-weight: bold;
+}
+
+span.pdf{
+	color: peru;
+}
+
+ul{
+	list-style-type: none;
+	margin: 10px 0;
+	padding: 0;
+
+}
+li{
+	margin-bottom: 10px;
+}
+
+/*General Content Design*/
+
+
+#verse{
+	text-align: center;
+	font-size: 25px;
+}
+
+#picture{
+	float: left;
+	padding: 20px;
+}
+
+#player_header{
+	color: bisque;
+}
+
+#player{
+	width:100%;
+}
+
+#content{
+	float: left;
+	font-size: 20px;
+	width: 60%;
+}
+
+#lessons_header{
+	color: bisque;
+	font-size: 20px;
+}
+
+#books_header{
+	color: bisque;
+	font-size: 20px;
+}
+
+#helpful_links{
+	max-width: 100%;
+	float: left;
+}
+
+#helpful_links_header{
+	color: bisque;
+}
+
+
+/*Home Page*/
+
+#announcement_header{
+	font-size: 20px;
+	color:maroon;
+}
+
+#faq_header{
+	font-size: 20px;
+	color: bisque;
+}
+
+/*slideshow retrieved from W3 mentioned in references & citations*/
+
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* slideshow */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 13px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.text2{
+  color: black;
+  font-size: 13px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.box{
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  text-align: center;
+}
+
+#slideshow_boxes{
+	text-align: center;
+}
+
+.box.active {
+  background-color: firebrick;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.to_top{
+	position: fixed;
+	padding-bottom: 5px;
+	padding-right: 5px;
+	bottom: 20px;
+	right: 15px;
+}
+
+.hidden_top{
+	display: none;
+}
+
+/*Spiritual*/
+
+#liturgy_table{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#liturgy_time_header{
+	color: bisque;
+}
+
+/*Table Design from W3*/
+
+#liturgy_table td, #liturgy_table th{
+	border: 3px solid gold;
+	padding: 2px;
+}
+
+#liturgy_table tr:nth-child(even){
+	background-color: maroon;
+}
+
+#liturgy_time{
+	float:left;
+}
+
+
+/*Hymns*/
+
+#hymns_curriculum_header{
+	color: bisque;
+	font-size: 20px;
+}
+
+#coptic_curriculum_header{
+	color: bisque;
+	font-size: 20px;
+}
+
+#hymns_curriculum{
+	float: left;
+	width: 50%;
+}
+
+#coptic_curriculum{
+	float: left;
+	width: 50%;
+}
+
+#quizzes_links{
+	width:100%;
+	float: left;
+}
+
+#quizzes_links_header{
+	color: bisque;
+	font-size: 20px;
+}
+
+/*History*/
+
+#councils_header{
+	color: bisque;
+	font-size: 20px;
+}
+
+#councils_table{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+/*Table Design from W3*/
+
+#councils_table td, #councils_table th{
+	border: 3px solid gold;
+	padding: 2px;
+}
+
+#councils_table tr:nth-child(even){
+	background-color: maroon;
+}
+
+/*Rites*/
+
+#coptic_dates_header{
+	color: bisque;
+	font-size: 20px;
+}
+
+#coptic_dates_table{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+/*Table Design from W3*/
+
+#coptic_dates_table td, #coptic_dates_table th{
+	border: 3px solid gold;
+	padding: 2px;
+}
+
+#coptic_dates_table tr:nth-child(even){
+	background-color: maroon;
+}
+
+/*Contact Us*/
+
+#contact_us_header{
+	color: bisque;
+	font-size: 20px;
+}
+
+#contact_us{
+	width: 80%;
+}
+
+/*Contact Us Design from W3*/
+
+input[type=text], select {
+  width: 80%;
+  padding: 5px;
+  margin: 5px 0;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 25%;
+  background-color: firebrick;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/*Media Query*/
+
+/* adjusting the size of the slide show and picture so they can fit on tablets */
+/* code below is cited in references and citations*/
+/* As mentioned in Unit 1 my site is meant to be used on a laptop or tablet for research*/
+/* Below a laptop and an iPad were used for reference, minimum tablet width was 768 px */
+
+
+@media screen and ( max-width: 1240px ){ 
+	.text{
+		font-size: 10px;
+	}
+	.text2{
+		font-size: 10px;
+	}
+	
+	img.responsive_image { /*adjusts size of image in header*/
+		width: 200px;
+		height: 400px;
+	}
+	
+	img.responsive_slideshow { /* adjusts size of image in slideshow*/
+		width: 100%;
+		height: 400px;
+	}
+}
